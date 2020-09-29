@@ -10,17 +10,17 @@ before_install:
 script:
   - docker run -e CI=true cygnetops/korean-vocabulary npm test
 
-# deploy:
-#   provider: elasticbeanstalk
-#   region: 'ap-south-1'
-#   app: 'docker-react-travis'
-#   env: 'DockerReactTravis-env'
-#   bucket_name: 'elasticbeanstalk-ap-south-1-823406413268'
-#   bucket_path: 'docker-react-travis'
-#   on:
-#     branch: master
-#   access_key_id: $AWS_ACCESS_KEY
-#   secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: 'ap-south-1'
+  app: 'koreanvocabulary'
+  env: 'Koreanvocabulary-env'
+  bucket_name: 'elasticbeanstalk-ap-south-1-823406413268'
+  bucket_path: 'koreanvocabulary'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
 
 
 # J45EFI04HHWJ1QWYQPUbZbVF5LWVXCZ4kSuwu9gF

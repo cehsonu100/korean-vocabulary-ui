@@ -17,7 +17,10 @@ export class Layout extends React.Component<LayoutProps,LayoutProps> {
 
   render() {
     return(
-      <h1>Hello there</h1>
+      <>
+        <h1>Hello there</h1>
+        <h2>Something got changed</h2>
+      </>
     );
   }
 }

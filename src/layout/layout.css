@@ -1,0 +1,14 @@
+.paper {
+  height: 150px;
+  width: 150px;
+  padding: auto;
+  margin: 10px;
+  text-align: center;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
+}

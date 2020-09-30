@@ -28,7 +28,7 @@ export class Layout extends React.Component<LayoutProps,LayoutState> {
   constructor(props: LayoutProps) {
     super(props);
     this.state = {
-      englishPrimary: false
+      englishPrimary: true
     };
   }
 
